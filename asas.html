@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <meta http-equiv="Content-Type" content="text/html; charset=utf-8">
+        <title>.:: NodeMCU e MQTT - IoT ::.</title>
+        <link rel="stylesheet" type="text/css" href="style.css"/>
+        <script type='text/javascript' src='mosquitto.js'></script>
+        <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
+    </head>
+    <body>
+        <center>
+            <table border ="0" width="100%">
+                </tr>
+                    <td bgcolor = "#3D3D3F" width="30%">
+                        <center><img src="filipeflop.png" height="50%" width="50%"></center>
+                    </td>
+                    <td bgcolor = "#3D3D3F" width="70%">
+                        <center>
+                            <font color=white>
+                                <h1>NodeMCU e MQTT - IoT</h1>
+                                <br>
+                                Autores: Pedro Bertoleti e FILIPEFLOP
+                            </font>
+                        </center>
+                    </td>
+                </tr>       
+            </table>
+
+            <div id="subscribe">
+                <br>
+                <font color="#3D3D3F">
+                    <b>1º passo:</b>
+                </font>
+                Definir o tópico MQTT para subscribe:
+                <p>Tópico de recepção de informações: 
+                    <input class="txt" id="sub-topic-text" type="text" value="RamonRecebeCoisasAvulsas">
+                </p>
+                <br>
+            </div>     
+            <br><br>
+                <font color="#3D3D3F">
+                    <b>2º Passo:</b>
+                </font>
+                Conectar-se ao servidor / broker:
+                <br><br>
+                <input class="but" id="connect-button" type="button" value="Conectar">
+                <input class="but" id="disconnect-button" type="button" value="Desconectar">
+            <br><br>
+            <p>
+                <font color="#3D3D3F">
+                    <b>Mensagens recebidas:</b>
+                </font>
+            </p>
+
+            <div id="received_messages"></div>
+
+            <p>
+                <b>Debug / respostas do servidor:</b>
+            </p>
+            
+            <div id="debug"></div>
+            
+            <!-- tmo.js -->
+            <script>
+(function() {
+    window.Main = {};
+    Main.Page = (function() {
+        var mosq = null;
+        function Page() {
+            var _this = this;
+            mosq = new Mosquitto();
+
+            $('#connect-button').click(function() {
+                return _this.connect();
+            });
+            $('#disconnect-button').click(function() {
+                return _this.disconnect();
+            });
+
+            mosq.onconnect = function(rc){
+                var p = document.createElement("p");
+                var topic = $('#sub-topic-text')[0].value;
+                p.innerHTML = "Conectado ao Broker!";
+                $("#debug").append(p);
+                mosq.subscribe(topic, 0);
+                
+            };
+            mosq.ondisconnect = function(rc){
+                var p = document.createElement("p");
+                var url = "ws://iot.eclipse.org/ws";
+                
+                p.innerHTML = "A conexão com o broker foi perdida";
+                $("#debug").append(p);                
+                mosq.connect(url);
+            };
+            mosq.onmessage = function(topic, payload, qos){
+                var p = document.createElement("p");
+                p.innerHTML = "Mensagem recebida em " + topic + ": " + payload;
+                $("#received_messages").append(p);
+            };
+        }
+        Page.prototype.connect = function(){
+            var url = "ws://iot.eclipse.org/ws";
+            mosq.connect(url);
+        };
+        Page.prototype.disconnect = function(){
+            mosq.disconnect();
+        };
+        
+        return Page;
+    })();
+    $(function(){
+        return Main.controller = new Main.Page;
+    });
+}).call(this);
+
+
+            </script>
+        </center>
+    </body>
+</html>
