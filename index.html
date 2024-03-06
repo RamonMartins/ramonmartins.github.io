@@ -6,7 +6,6 @@
         <link rel="stylesheet" type="text/css" href="style.css"/>
         <script type='text/javascript' src='mosquitto.js'></script>
         <script type='text/javascript' src='http://code.jquery.com/jquery-1.7.2.min.js'></script>
-        <script type="text/javascript"></script>
     </head>
     <body>
         <center>
@@ -34,10 +33,10 @@
                 </font>
                 definir os tópicos MQTT de subscribe e publish:
                 <p>Tópico de envio de informações: 
-                    <input class="txt" id="pub-topic-text" type="text" value="MQTTFilipeFlopEnvia">
+                    <input class="txt" id="pub-topic-text" type="text" value="RamonEnviaCoisasAvulsas">
                 </p>
                 <p>Tópico de recepcao de informações: 
-                    <input class="txt" id="pub-subscribe-text" type="text" value="MQTTFilipeFlopRecebe">
+                    <input class="txt" id="pub-subscribe-text" type="text" value="RamonRecebeCoisasAvulsas">
                 </p>
                 <br>
             </div>	 
@@ -52,9 +51,9 @@
                 <input class="but" id="disconnect-button" type="button" value="Desconectar">
             </div>
             <br><br>
-            <font color="#3D3D3F">
-                <b>3º passo:</b>
-            </font> escolha a ação desejada:
+                <font color="#3D3D3F">
+                    <b>3º passo:</b>
+                </font> escolha a ação desejada:
             <br><br>
             <input class="but" id="liga-output" type="button"    value="  Ligar ">
             <input class="but" id="desliga-output" type="button" value="Desligar">
@@ -70,7 +69,7 @@
             <p>
                 <b>Debug / respostas do servidor:</b>
             </p>
-            
+
             <div id="debug"></div>
             
             <script src="tmo.js" type="text/javascript"></script>
