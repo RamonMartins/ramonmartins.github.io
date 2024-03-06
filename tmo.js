@@ -43,7 +43,7 @@
 			};
 			mosq.ondisconnect = function(rc){
 				var p = document.createElement("p");
-				var url = "ws://iot.eclipse.org/ws";
+				var url = "ws://broker.hivemq.com:8000/mqtt";
 				
 				p.innerHTML = "A conexão com o broker foi perdida";
 				$("#debug").append(p);				
