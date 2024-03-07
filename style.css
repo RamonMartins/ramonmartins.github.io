@@ -49,3 +49,22 @@ body{
 .subtitulo-stt-sistema{
     font-size: 14px;
 }
+
+.lista-card{
+    display: flex;
+    flex-wrap: wrap;
+    row-gap: 15px;
+    column-gap: 15px;
+    justify-content: center;
+}
+
+.card{
+    width: 350px;
+    display: flex;
+    flex-direction: column;
+    
+    border: 1px solid #acacac;
+    border-radius: 10px;
+    box-shadow: 2px 2px 5px #acacac;
+    padding: 10px;
+}
