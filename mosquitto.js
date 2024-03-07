@@ -94,7 +94,7 @@ Mosquitto.prototype = {
 		this.ws.onmessage = this.ws_onmessage;
 		this.ws.m = this;
 		this.ws.onerror = function(evt){
-			alert(evt.data);
+			//alert("Falha em se conectar ao Broker | " + evt.data);
 		}
 	},
 
