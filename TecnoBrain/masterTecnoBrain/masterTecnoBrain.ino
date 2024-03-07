@@ -18,10 +18,10 @@
                                //            irá fechar a conexão de um deles).
 
 // WIFI
-//const char* SSID = "iPhone de ramon"; // SSID / nome da rede WI-FI que deseja se conectar
-//const char* PASSWORD = "87654320"; // Senha da rede WI-FI que deseja se conectar
-const char* SSID = "brisa-3012659"; // SSID / nome da rede WI-FI que deseja se conectar
-const char* PASSWORD = "xs324hhh"; // Senha da rede WI-FI que deseja se conectar
+const char* SSID = "iPhone de ramon"; // SSID / nome da rede WI-FI que deseja se conectar
+const char* PASSWORD = "87654320"; // Senha da rede WI-FI que deseja se conectar
+//const char* SSID = "brisa-3012659"; // SSID / nome da rede WI-FI que deseja se conectar
+//const char* PASSWORD = "xs324hhh"; // Senha da rede WI-FI que deseja se conectar
 
 
 // MQTT
@@ -94,7 +94,6 @@ void setup() {
 
 
 void loop() {
-  Serial.println(WiFi.status());
 
   // Verifica se há dados recebidos
   int packetSize = Udp.parsePacket();
@@ -123,7 +122,6 @@ void loop() {
 }
 
 void reconnectMQTT() {
-  Serial.println("passei no reconect");
   while (!MQTT.connected()) {
       Serial.print("* Tentando se conectar ao Broker MQTT: ");
       Serial.println(BROKER_MQTT);

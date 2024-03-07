@@ -1,5 +1,6 @@
-var funcionarios = null;
-var lista = [];
+var funcionarios = null;	// Lista de objetos funcionarios cadastrados
+var lista = [];				// Lista de aparelhos enviando dados
+var dicAparelhos = {}		// Dicionario de aparelhos conectados - Verifica perda de sinal
 var listaCard = document.getElementById("lista-card");
 
 async function buscar(){
@@ -40,6 +41,7 @@ buscar();
 				let indiceTraco = decodificada.indexOf(" - ");
 				var statusSemId = decodificada.substring(indiceTraco + 3);
 				
+				// 
 				if(funcionarios){
 					if(!lista.includes(decodificada[0])){
 						lista.push(decodificada[0]);
@@ -47,6 +49,12 @@ buscar();
 					}
 				}
 
+				if (verificarDicionario(decodificada[0]) == false){
+					dicionario[Object.keys(dicionario).length] = {
+						ID: 2,
+						ultimaAtualizacao: new Date()
+				};
+				}
 				
 				if(statusSemId == "Dentro da área & Sem uso do capacete"){
 					$("#cardUser" + decodificada[0]).html(statusSemId).css("color", "red");
@@ -96,4 +104,13 @@ function addCard(idUser, statusSemId){
 			
 		</div>
 	`;
+}
+
+function verificarDicionario(id){
+	for(let aparelho of dicAparelhos){
+		if(aparelho.id != id){
+			return true;
+		}
+	}
+	return false;
 }
