@@ -53,8 +53,10 @@ void loop() {
         sendToMaster(buffer);
         digitalWrite(buzz, HIGH);
       }else if(distancia < 0) {
-        Serial.println("Leitura do Sensor de distancia com defeito");
-        sendToMaster("Leitura do Sensor de distancia com defeito");
+        String mensagem = num_matricula + " - Leitura do Sensor de distancia com defeito";
+        mensagem.toCharArray(buffer, sizeof(buffer));
+        Serial.println(buffer);
+        sendToMaster(buffer);
         digitalWrite(buzz, LOW);
       }else{
         String mensagem = num_matricula + " - Dentro da área & Com uso do capacete";
