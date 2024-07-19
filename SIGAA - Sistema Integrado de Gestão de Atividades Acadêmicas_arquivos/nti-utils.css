@@ -1,0 +1,240 @@
+
+#operacoes-subsistema #auxListFuncionalidades {
+	max-height: 120px;
+	overflow: auto;
+
+	border: 1px solid #c6d8f5;
+	margin: 40px 0 0 0;
+	padding: 0;
+}
+
+#auxInformacoes {
+	display: block;
+	width: 100%;
+	height: 30px;
+
+	line-height: 30px;
+	text-indent: 10px;
+
+	border-bottom: 1px solid #c6d8f5;
+}
+
+.nti-utils-box * {
+	box-sizing: border-box;
+}
+
+.nti-utils-box {
+	margin: 10px 0;
+	padding: 8px;
+
+	background: #e3eaf5;
+	border: 1px solid #6593CF;
+
+	border-radius: 2px;
+}
+
+.nti-utils-box label {
+	display: inline-block;
+	width: 100%;
+    text-align: center;
+
+    color: #003395;
+    font-size: 12px;
+    font-weight: bold;
+
+    padding-right: 10px;
+	line-height: 30px;
+	font-size: 12px;
+}
+
+.nti-utils-box input {
+	width: 95%;
+
+	height: 30px;
+    padding: 6px 12px;
+    border-radius: 4px;
+
+    font-size: 12px;
+    line-height: 1.3;
+
+    color: #555;
+}
+.nti-utils-box .nti-utils-close {
+	display: inline-block;
+	text-align: right;
+	width: 4%;
+	height: 30px;
+	padding: 0px 12px;
+	font-size: 22px;
+	color: #2d68dc;
+	cursor: pointer;
+
+}
+.nti-utils-box .nti-utils-close:hover {
+	color: #051d4c;
+}
+
+#nti-utils-search-div .nti-row li a {
+	border-bottom: 1px solid #DDD;
+	line-height: 20px;
+
+	text-indent: 10px;
+
+	display: block;
+	position: relative;
+    width: 100%;
+    min-height: 30px;
+    line-height: 30px;
+    background: #ecf1f7;
+    color: #003390;
+
+    font-weight: normal;
+    transition: background 0.3s linear 0s;
+}
+
+#nti-utils-search-div .nti-row li a:hover {
+    background: white;
+    text-decoration: none;        
+    margin: 0 !important;
+}
+
+#nti-utils-search-div .nti-row li a > b {
+	color: #021c4a;
+}
+
+#nti-utils-search-div .nti-row li a span {
+	margin-left: 20px;
+    color: #AAA;	
+}
+
+#nti-utils-search-div .nti-row li a span > b {
+	color: #777;
+}
+
+#nti-utils-search-div .nti-row li a button {
+	/*
+	position: absolute;
+	right: 5px;
+	top: 4px;
+	*/
+	position: relative;
+	float: right;
+	margin: 4px 5px 0 0;
+	
+    background: #cfd9e8;
+    border: 1px solid #a8b9d2;
+    padding: 2px 7px;
+    color: #6c85ab;
+    cursor: pointer;
+}
+
+#nti-utils-search-div .nti-row li a button:hover {
+	color: #395175;
+	border: 1px solid #395175;
+	background: #bbd1f3;
+}
+
+#nti-utils-search-div .nti-row {
+	display: block;
+	width: 100%;
+	
+}
+
+#operacoes-subsistema #nti-utils-search-div  li {
+	float: none;
+    width: 100%;
+    margin: 0;
+    list-style-image: none;
+}
+
+.nti-utils-find-func {
+	padding: 0 10px;
+	border: 1px solid #003390;
+	border-radius: 5px;
+	animation: colorPulse 1s linear infinite;
+}
+
+#auxListFuncionalidades.nti-portal {
+	margin: 38px 0 5px;
+    padding: 0;
+    border: 1px solid #c6d8f5;
+    max-height: 80px;
+    overflow: auto;
+}
+
+.nti-span-2,
+.nti-span-3, 
+.nti-span-6, 
+.nti-span-9, 
+.nti-span-10,
+.nti-span-12 {
+	display: block;
+	float: left;
+}
+
+.nti-span-2 {
+	width: 16.6%;
+}
+
+.nti-span-3 {
+	width: 25%;
+}
+
+.nti-span-6 {
+	width: 50%;
+}
+
+.nti-span-9 {
+	width: 75%;
+}
+
+.nti-span-10 {
+	width: 83.3%;
+}
+
+.nti-span-12 {
+	width: 100%;
+}
+
+.nti-clear-both {
+	clear: both;
+}
+
+@keyframes colorPulse {
+	0%   {background: #fff;} 
+	50%  {background: #cedfff;}
+	100% {background: #fff;}
+}
+
+
+
+.ui-lg-3 {
+	background: white !important;
+	border-bottom-color: #88acc1 !important;
+	border-left-color: #88acc1 !important;
+	border-right-color: #88acc1 !important;
+	cursor: pointer;
+	transition: 0.5s background;
+}
+.ui-lg-3:hover {
+	background: #3c8dbc !important;
+}
+.ui-lg-3 a {
+	color: #256184;
+	font-weight: bold;
+	transition: 0.5s color;
+}
+.ui-lg-3:hover a {
+	color: white;
+}
+.ui-lg-3 .fa {
+	padding: 0.25em;
+	margin: 0.2em;
+	border-bottom: 1px solid #eee;
+	color: #8fa6c3;
+	transition: 0.5s border, 1s color;
+}
+.ui-lg-3:hover .fa {
+	border-bottom: 1px solid #266d98;
+	color: white;
+}
