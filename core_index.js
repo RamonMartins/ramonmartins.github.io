@@ -13,11 +13,3 @@ function EnviarDados(){
 
     window.location.href = "painel_estudante.htm?nome=" + encodeURIComponent(v_inp_1) + "&curso=" + encodeURIComponent(v_inp_2)
 }
-
-function app(){
-    let busca_nome = document.getElementById("nome-user-trocar2")
-    console.log(busca_nome)
-    console.log(busca_nome.textContent)
-}
-
-app()
