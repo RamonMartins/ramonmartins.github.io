@@ -1,0 +1,413 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html class="background" xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta charset="UTF-8">
+
+<script src="core_painel.js"></script>
+
+<script type="text/javascript" src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/JSCookMenu.js"><!--
+
+//--></script>
+<script type="text/javascript" src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/MyFacesHack.js"><!--
+
+//--></script>
+<script type="text/javascript"><!--
+var myThemeOfficeBase='/sigaa/faces/myFacesExtensionResource/org.apache.myfaces.renderkit.html.util.MyFacesResourceLoader/17213529/navmenu.jscookmenu.HtmlJSCookMenuRenderer/ThemeOffice/';
+//--></script>
+<script type="text/javascript" src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/theme.js"><!--
+
+//--></script>
+<link rel="stylesheet" href="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/theme.css" type="text/css">
+<meta http-equiv="Pragma" content="no-cache">
+
+
+<title>SIGAA - Sistema Integrado de Gestão de Atividades Acad�micas</title>
+<link class="component" href="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/eAF7sqpgb-jyGdIAFrMEaw___002.css" rel="stylesheet" type="text/css"><link class="component" href="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/eAF7sqpgb-jyGdIAFrMEaw__.css" rel="stylesheet" type="text/css"><script type="text/javascript">window.RICH_FACES_EXTENDED_SKINNING_ON=true;</script><script src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/skinning.js.jsf" type="text/javascript"></script><link href="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/button.css" rel="stylesheet" type="text/css">
+<link rel="shortcut icon" href="https://sigaa.ufpi.br/sigaa/img/sigaa.ico">
+<link rel="stylesheet" href="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/all.min.css">
+<script type="text/javascript" src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/jawr_loader.js"></script>
+<script type="text/javascript">
+                JAWR.loader.style('/bundles/css/sigaa_base.css', 'all');
+        		JAWR.loader.style('/css/ufrn_print.css', 'print');
+
+        		JAWR.loader.script('/bundles/js/sigaa_base.js');
+</script> <link rel="stylesheet" type="text/css" media="all" href="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/sigaa_base.css">  <link rel="stylesheet" type="text/css" media="print" href="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/ufrn_print.css">  <script type="text/javascript" src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/sigaa_base.js"> </script> 
+<link rel="stylesheet" type="text/css" media="all" href="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/sigaa.css">
+<link href="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/nti-utils.css" rel="stylesheet" type="text/css">
+<script type="text/javascript" src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/nti-utils.js"></script>
+<script type="text/javascript">
+	document.addEventListener("DOMContentLoaded", function(event) { 
+		initNtiUtils();
+	});
+</script>
+</head>
+
+<body><div id="painel-mensagem-envio_mask" class="mask" style="z-index: 5;">&nbsp;</div>
+	<div id="container">
+	<div id="cabecalho">
+	<div id="info-sistema">
+	<h1><span>UFPI - SIGAA -</span></h1>
+	<h3>Sistema Integrado de Gestão de Atividades Académicas</h3>
+
+	
+		<div id="tempoSessao"></div>
+		<span class="sair-sistema"> <a href="https://sigaa.ufpi.br/sigaa/logar.do?dispatch=logOff">SAIR</a> </span>
+	</div>
+	 
+
+	<div id="painel-usuario">
+	
+		<div id="menu-usuario">
+		<ul>
+			<li class="modulos">
+				<span id="modulos"> <a href="#" id="show-modulos">
+				Módulos </a> </span>
+			</li>
+				<li class="caixa-postal">
+				<a href="https://sigaa.ufpi.br/sigaa/abrirCaixaPostal.jsf?sistema=2">
+							Cx. Postal <font color="red" style="font-size:0.7em;">(99+)</font>
+				</a>
+				</li>
+			<li class="chamado">
+						<a href="javascript://nop/" onclick="alert('Caro aluno, em caso de d�vidas em rela��o ao uso do SIGAA, recorra � coordena��o do seu curso.\nEm caso de erro, envie uma mensagem para sistemas@ufpi.edu.br (n�o esquecendo de informar seu n�mero de matr�cula).');">Abrir Chamado</a>
+			</li>
+					<li class="menus">
+							<a href="https://sigaa.ufpi.br/sigaa/verPortalDiscente.do">Menu Discente</a>
+					</li>
+				<li class="dados-pessoais"><a href="#" onclick="window.open('/sigaa/alterar_dados.jsf','','width=670,height=430, top=100, left=100, scrollbars' )">Alterar
+				senha</a></li>
+			
+			<li class="ajuda">
+			<a href="https://docs.info.ufrn.br/doku.php?id=suporte:sigaa:visao_geral" target="_blank">
+			Ajuda </a></li>
+		</ul>
+		</div>
+
+		<div id="info-usuario">
+
+		<p class="periodo-atual">
+					Semestre atual: <strong>2024.1</strong>
+		</p>
+
+		<p class="usuario">
+			<span class="nome-user-trocar">RAMON MARTINS FERREIRA</span>
+			
+			
+				<i>
+					<small>
+						<a href="https://sigaa.ufpi.br/sigaa/escolhaVinculo.do?dispatch=listar">Alterar vínculo</a>
+					</small>
+				</i>
+			
+		</p>
+
+		<p class="unidade">
+			CENTRO DE CIENCIAS HUMANAS E LETRAS
+			 (11.00.25)
+			
+		</p>
+
+		</div>
+	
+	<div id="menu-principal"></div>
+	</div>
+	</div>
+	
+
+	<div id="conteudo">
+
+
+<link rel="stylesheet" type="text/css" media="all" href="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/portal_docente.css">
+
+
+<style>
+#cboxLoadedContent iframe {
+	background-color:#FFFFFF;
+}
+</style>
+<link rel="stylesheet" type="text/css" href="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/skin.css">
+
+	
+	<div id="portal-docente">
+
+<div id="menu-dropdown">
+<div class="wrapper">
+
+<div id="menu_form_menu_discente_j_id_jsp_1325243614_85_menu"><table summary="main menu" class="ThemeOfficeMenu" cellspacing="0"><tbody><tr><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,'cmSubMenuID1','hbr',0)" onmouseout="cmItemMouseOut (this,500)" onmousedown="cmItemMouseDown (this,0)" onmouseup="cmItemMouseUp (this,0)"><span class="ThemeOfficeMainFolderLeft"><img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/ensino_menu.gif"></span><span class="ThemeOfficeMainFolderText">Ensino</span><span class="ThemeOfficeMainFolderRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,'cmSubMenuID9','hbr',48)" onmouseout="cmItemMouseOut (this,500)" onmousedown="cmItemMouseDown (this,48)" onmouseup="cmItemMouseUp (this,48)"><span class="ThemeOfficeMainFolderLeft"><img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/ativ_acam_especifica.png"></span><span class="ThemeOfficeMainFolderText">Atividades</span><span class="ThemeOfficeMainFolderRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,'cmSubMenuID11','hbr',53)" onmouseout="cmItemMouseOut (this,500)" onmousedown="cmItemMouseDown (this,53)" onmouseup="cmItemMouseUp (this,53)"><span class="ThemeOfficeMainFolderLeft"><img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/pesquisa_menu.gif"></span><span class="ThemeOfficeMainFolderText">Pesquisa</span><span class="ThemeOfficeMainFolderRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,'cmSubMenuID17','hbr',66)" onmouseout="cmItemMouseOut (this,500)" onmousedown="cmItemMouseDown (this,66)" onmouseup="cmItemMouseUp (this,66)"><span class="ThemeOfficeMainFolderLeft"><img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/extensao_menu.gif"></span><span class="ThemeOfficeMainFolderText">Extensão</span><span class="ThemeOfficeMainFolderRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,'cmSubMenuID21','hbr',81)" onmouseout="cmItemMouseOut (this,500)" onmousedown="cmItemMouseDown (this,81)" onmouseup="cmItemMouseUp (this,81)"><span class="ThemeOfficeMainFolderLeft"><img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/monitoria_menu.gif"></span><span class="ThemeOfficeMainFolderText">Monitoria</span><span class="ThemeOfficeMainFolderRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,'cmSubMenuID24','hbr',96)" onmouseout="cmItemMouseOut (this,500)" onmousedown="cmItemMouseDown (this,96)" onmouseup="cmItemMouseUp (this,96)"><span class="ThemeOfficeMainFolderLeft"><img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/biblioteca_menu.gif"></span><span class="ThemeOfficeMainFolderText">Biblioteca</span><span class="ThemeOfficeMainFolderRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,'cmSubMenuID29','hbr',122)" onmouseout="cmItemMouseOut (this,500)" onmousedown="cmItemMouseDown (this,122)" onmouseup="cmItemMouseUp (this,122)"><span class="ThemeOfficeMainFolderLeft"><img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/estagio_menu.png"></span><span class="ThemeOfficeMainFolderText">Estágio</span><span class="ThemeOfficeMainFolderRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,'cmSubMenuID30','hbr',124)" onmouseout="cmItemMouseOut (this,500)" onmousedown="cmItemMouseDown (this,124)" onmouseup="cmItemMouseUp (this,124)"><span class="ThemeOfficeMainFolderLeft"><img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/amb_virt.png"></span><span class="ThemeOfficeMainFolderText">Ambientes Virtuais</span><span class="ThemeOfficeMainFolderRight">&nbsp;</span></td><td class="ThemeOfficeMainItem" onmouseover="cmItemMouseOver (this,'ThemeOffice',1,'cmSubMenuID32','hbr',128)" onmouseout="cmItemMouseOut (this,500)" onmousedown="cmItemMouseDown (this,128)" onmouseup="cmItemMouseUp (this,128)"><span class="ThemeOfficeMainFolderLeft"><img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/outros.png"></span><span class="ThemeOfficeMainFolderText">Outros</span><span class="ThemeOfficeMainFolderRight">&nbsp;</span></tr></tbody></table></div></div>
+
+</form>
+
+</div>
+</div>
+		<div id="perfil-docente">
+			<div class="pessoal-docente">
+				<div class="foto">
+					
+					
+						<img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/no_picture.png" width="128" height="125">
+					
+				</div>
+				<ul>
+					<li>
+						<a href="https://sigaa.ufpi.br/sigaa/abrirCaixaPostal.jsf?sistema=2">
+							Mensagens
+						</a>
+					</li>
+					<li>
+						<a class="perfil" href="https://sigaa.ufpi.br/sigaa/ufpi/portais/discente/perfil.jsf">
+							Atualizar Foto e Perfil
+						</a>
+					</li>
+					<li>
+
+<a id="j_id_jsp_1325243614_226:meusDadosPessoais" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_226'),{'j_id_jsp_1325243614_226:meusDadosPessoais':'j_id_jsp_1325243614_226:meusDadosPessoais'},'');}return false">Meus Dados Pessoais</a><input type="hidden" name="javax.faces.ViewState" id="javax.faces.ViewState" value="j_id1">
+</form>
+					</li>
+
+				</ul>
+				<div class="clear"> </div>
+			</div>
+			<p class="info-docente">
+			
+				<span> <b><small class="nome-user-trocar">RAMON MARTINS FERREIRA</small></b> </span>
+			</p>
+			<div id="agenda-docente" style="text-align: center">
+				 
+			
+				<input id="form_links:avaliacaoInstitucional" type="image" src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/avaliacao.jpg" name="form_links:avaliacaoInstitucional">
+				 
+			</div>
+					<br>
+					<p style="text-align: center; font-size: x-small">
+					<a href="https://sigaa.ufpi.br/sigaa/public/downloads/Calendario_Academico_UFPI_20151.pdf" target="_blank">
+					Calendário Acadêmico de Graduação
+					</a>
+					</p>				
+				
+			<div id="agenda-docente">
+				<h4> Dados Institucionais </h4>
+				<table>
+					<tbody><tr>
+						<td> Matrícula: </td>
+						<td> 2024635257 </td>
+					</tr>
+					
+					<tr>
+						<td> Curso: </td>
+						<td> CCHL - <span id="curso-user-trocar">CIÊNCIAS ECONÔMICAS</span> - Presencial - Teresina  </td>
+					</tr>
+					<tr>
+						<td> Turno: </td>
+						<td> Matutino (M)</td>
+					</tr>
+					
+					<tr>
+						<td> Nível: </td>
+						<td> GRADUAÇÃO </td>
+					</tr>
+					<tr>
+						<td> Status: </td>
+						<td> ATIVO </td>
+					</tr>
+					<tr>
+						<td> E-Mail: </td>
+						<td>
+							ramon-bac@hotm...
+						</td>
+					</tr>
+					<tr>
+						<td> Entrada: </td>
+						<td> 2024.1</td>
+					</tr>
+						<tr>
+							<td colspan="2">&nbsp;</td>
+						</tr>
+						<tr>
+							<td colspan="2" style="text-align: center; font-style: italic">Índices Acadêmicos</td>
+						</tr>
+						<tr>
+							<td colspan="2">
+								<table width="100%">
+									<tbody><tr>
+												</tr>
+												<tr>
+											
+											<td><abbr title="�ndice de Rendimento Acad�mico">IRA:</abbr>&gt;</td>
+											<td align="right"><div style="margin-right:15px;">6.6545</div></td>
+										
+									</tr>
+									<tr>	
+										
+										<td colspan="4" align="center">
+<form id="j_id_jsp_1325243614_230" name="j_id_jsp_1325243614_230" method="post" action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id_jsp_1325243614_230" value="j_id_jsp_1325243614_230">
+<a id="j_id_jsp_1325243614_230:detalharIndiceAcademico" href="#" style="font-size:9px; margin-right:12px;">Detalhar</a>
+</form></td>
+										
+									</tr>
+								</tbody></table>
+							</td>
+						</tr>
+				</tbody></table>
+			</div>
+		</div>
+		<div id="main-docente">
+
+			<div id="noticias-portal">
+				
+				<div id="fscroller" style="border: 0px solid black; padding: 2px; color: rgb(0, 0, 0);"><p class="noticia destaque"><a href="#" id="noticia_15239379" style="color: rgb(15, 15, 15);">Processo Seletivo Simplificado para Bolsistas da Superintendência de Comunicação Social/UFPI</a></p><div class="descricao" style="overflow: auto; overflow-x: hidden; overflow-y: hidden; height: 75px; width: 550px;"><a href="#" style="font-weight: normal; text-decoration: none; color: rgb(15, 15, 15);" id="noticia_15239379"><p>A
+ Superintendência de Comunicação Social da Universidade Federal do Piauí
+ torna pública a abertura de inscrições do Processo de Seleção para 
+participação em programa de Bolsa Estudantil de experiência 
+extracurricular, profissional e/ou complementar, no âmbito da 
+Superintendência de Comunicação Social / SCS-UFPI.</p></a></div></div><div id="controls" style="text-align: right; position: absolute; bottom: 5px; right: 5px"><img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/flash_volta.gif" style="cursor: pointer" onclick="previousEl();">&nbsp;<img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/flash_pause.gif" style="cursor: pointer" onclick="pauseEl();">&nbsp;<img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/flash_vai.gif" style="cursor: pointer" onclick="nextEl();">&nbsp;<img src="SIGAA%20-%20Sistema%20Integrado%20de%20Gest%C3%A3o%20de%20Atividades%20Acad%C3%AAmicas_arquivos/vermais8.jpg" style="text-indent: -5000px;" alt="clique aqui para visualizar todas as noticias." onclick="lerTudo();"></div>
+			</div>
+			<div id="turmas-portal" class="simple-panel">
+				<h4> Turmas do Semestre   </h4>
+					<p class="vazio"> Nenhuma turma neste semestre </p>
+				<span class="mais" style="text-align: right;display: block;border-top: 1px solid #CFDCEF;font-size: 0.9em;">
+					<a href="https://sigaa.ufpi.br/sigaa/portais/discente/turmas.jsf">Ver turmas anteriores</a>
+				</span>
+			</div>
+			<div id="participantes" class="simple-panel">
+				<h4> Comunidades Virtuais que participa atualmente </h4>
+			</div>
+	<div id="forum-portal" class="simple-panel">
+				<h4>FÓRUM DO CURSO DE CIENCIAS ECONOMICAS </h4>
+<form id="j_id_jsp_1325243614_267" name="j_id_jsp_1325243614_267" method="post" action="/sigaa/ufpi/portais/discente/discente.jsf" enctype="application/x-www-form-urlencoded">
+<input type="hidden" name="j_id_jsp_1325243614_267" value="j_id_jsp_1325243614_267">
+
+		<div class="descricaoOperacao">
+			Caro Aluno, este fórum é destinado para discussões relacionadas ao seu curso. Todos os alunos 
+			do curso e a coordenação tem acesso a ele.
+		</div>
+			<table class="listagem">
+				<thead>
+					<tr>
+						<th>Título</th>
+						<th>Autor</th>
+						<th style="text-align: center">Respostas</th>
+						<th style="text-align: center">Data</th>
+						<th></th>
+						<th></th>
+					</tr>
+				</thead>
+				<tbody>
+						<tr class="linhaPar">
+
+							<td width="50%">
+							<a id="j_id_jsp_1325243614_267:mostrarForumMensagemCurso" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_267'),{'j_id_jsp_1325243614_267:mostrarForumMensagemCurso':'j_id_jsp_1325243614_267:mostrarForumMensagemCurso','idForumMensagem':'52175255','id':'1381623'},'');}return false">Aulas</a>
+							</td>
+
+							<!-- <td>Aulas</td> -->
+							<td><abbr title="HERICK RODRIGUES DE ALCANTARA"> herickrodrigues31 </abbr></td>
+							<td style="text-align: center">1</td>
+							<td style="text-align: center">
+								
+									19/03/2024 12:59:47
+								 
+								
+							</td>
+						</tr>
+					
+						<tr class="linhaImpar">
+
+							<td width="50%">
+							<a id="j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_1" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_267'),{'j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_1':'j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_1','idForumMensagem':'50036265','id':'1381623'},'');}return false">Avaliação docente</a>
+							</td>
+
+							<!-- <td>Avalia&#231;&#227;o docente</td> -->
+							<td><abbr title="ARNALDO SOARES DE LIMA"> arnaldolima </abbr></td>
+							<td style="text-align: center">3</td>
+							<td style="text-align: center">
+								
+									12/03/2024 08:14:35
+								 
+								
+							</td>
+						</tr>
+					
+						<tr class="linhaPar">
+
+							<td width="50%">
+							<a id="j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_2" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_267'),{'j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_2':'j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_2','idForumMensagem':'46302774','id':'1381623'},'');}return false">Matrícula em vagas remanescentes</a>
+							</td>
+
+							<!-- <td>Matr&#237;cula em vagas remanescentes</td> -->
+							<td><abbr title="JOÃO SOARES DA SILVA FILHO"> jfilho </abbr></td>
+							<td style="text-align: center">2</td>
+							<td style="text-align: center">
+								
+									21/09/2023 23:21:45
+								 
+								
+							</td>
+						</tr>
+					
+						<tr class="linhaImpar">
+
+							<td width="50%">
+							<a id="j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_3" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_267'),{'j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_3':'j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_3','idForumMensagem':'46338788','id':'1381623'},'');}return false">Currículo Antigo: metodologia</a>
+							</td>
+
+							<!-- <td>Curr&#237;culo Antigo: metodologia</td> -->
+							<td><abbr title="CAIO MATTEUCCI DE ANDRADE LOPES"> caiolopes </abbr></td>
+							<td style="text-align: center">1</td>
+							<td style="text-align: center">
+								
+									14/09/2023 12:31:30
+								 
+								
+							</td>
+						</tr>
+					
+						<tr class="linhaPar">
+
+							<td width="50%">
+							<a id="j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_4" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_267'),{'j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_4':'j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_4','idForumMensagem':'48225284','id':'1381623'},'');}return false">Optativa "Introdução à Teoria dos Jogos"</a>
+							</td>
+
+							<!-- <td>Optativa "Introdu&#231;&#227;o &#224; Teoria dos Jogos"</td> -->
+							<td><abbr title="JOÃO SOARES DA SILVA FILHO"> jfilho </abbr></td>
+							<td style="text-align: center">0</td>
+							<td style="text-align: center">
+								
+									04/05/2023 12:34:51
+								 
+								
+							</td>
+						</tr>
+					
+						<tr class="linhaImpar">
+
+							<td width="50%">
+							<a id="j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_5" href="#" onclick="if(typeof jsfcljs == 'function'){jsfcljs(document.getElementById('j_id_jsp_1325243614_267'),{'j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_5':'j_id_jsp_1325243614_267:mostrarForumMensagemCursoj_id_5','idForumMensagem':'48055209','id':'1381623'},'');}return false">Problemas na matrícula 23.1 ?</a>
+							</td>
+
+							<!-- <td>Problemas na matr&#237;cula 23.1 ?</td> -->
+							<td><abbr title="CAIO MATTEUCCI DE ANDRADE LOPES"> caiolopes </abbr></td>
+							<td style="text-align: center">9</td>
+							<td style="text-align: center">
+								
+									28/04/2023 09:56:54
+								 
+								
+							</td>
+						</tr>
+					
+				</tbody>
+			</table>
+</form>
+	</div> 
+		</div>
+	</div>
+</div> 
+	<br>
+	<div style="width: 80%; text-align: center; margin: 0 auto;">
+		<a href="https://sigaa.ufpi.br/sigaa/verPortalDiscente.do">Portal do Discente</a>
+	</div>
+	<div id="rodape" style="width: 984px; text-align: center; margin: 0 auto;">
+		<p>	SIGAA | Superintendência de Tecnologia da Informação - STI/UFPI - (86) 3215-1124 | sigjb03.ufpi.br.sigaa</p>
+	</div>
+</div>
+
+</body></html>
