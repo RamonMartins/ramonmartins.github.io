@@ -65,5 +65,12 @@ document.addEventListener("DOMContentLoaded", function() {
     // Alterar data de entrada no curso
     let busca_entrada = document.getElementById("info_entrada")
     busca_entrada.textContent = ano_atual - 1
+
+
+    const imagem = sessionStorage.getItem('imagem');
+
+    if (imagem) {
+        document.getElementById('info_foto').src = imagem;
+    }
     
 });
