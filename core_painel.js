@@ -67,8 +67,8 @@ document.addEventListener("DOMContentLoaded", function() {
     busca_entrada.textContent = ano_atual - 1
 
 
+    // Altera a foto
     const imagem = sessionStorage.getItem('imagem');
-
     if (imagem) {
         document.getElementById('info_foto').src = imagem;
     }
