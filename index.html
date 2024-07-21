@@ -5,6 +5,7 @@
         <meta name="viewport" content="width=device-width, initial-scale=1.0">
         <title>Passe RU</title>
         <link rel="stylesheet" href="style_index.css">
+        <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
     </head>
     <body>
         <div class="container">
@@ -14,17 +15,17 @@
             
             <form>
                 <div class="campos">
-                    <span>Nome Completo</span>
+                    <span class="rotulo">Nome Completo</span>
                     <input type="text" placeholder="Nome completo" id="info_nome" class="inputs" required>
                 </div>
 
                 <div class="campos">
-                    <span>E-mail</span>
+                    <span class="rotulo">E-mail</span>
                     <input type="text" placeholder="E-mail" id="info_email" class="inputs">
                 </div>
                 
                 <div class="campos">
-                    <span>Curso</span>
+                    <span class="rotulo">Curso</span>
                     <select id="info_curso" class="inputs">
                         <option>CCHL - ADMINISTRAÇÃO</option>
                         <option>CCHL - DIREITO</option>
@@ -36,23 +37,23 @@
                         <option>CT - ENGENHARIA ELÉTRICA</option>
                     </select>
                 </div>
+
+                <div class="campos">
+                    <span class="rotulo">Foto de perfil</span>
+                    <input type="file" id="info_foto" accept="image/*" class="inputs">
+                </div>
+
+                <div class="btns">
+                    <button type="button" onclick="ResetarCampos()">Limpar campos</button>
+                    <button type="button" onclick="EnviarDados()">Enviar Dados</button>
+                </div>
             </form>
-
-            <div class="campos">
-                <span>Foto de perfil</span>
-                <input type="file" id="info_foto" accept="image/*" class="inputs">
-            </div>
-
-            <div class="btns">
-                <button onclick="ResetarCampos()">Limpar campos</button>
-                <button onclick="EnviarDados()">Enviar Dados</button>
-            </div>
         </div>
 
         <footer class="rodape">
             Version 1.0
         </footer>
-        
+
+        <script src="core_index.js"></script>
     </body>
-    <script src="core_index.js"></script>
 </html>
